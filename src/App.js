@@ -1,9 +1,11 @@
 import React from 'react'
+import Form from './components/Form/Form'
 
 const App = () => {
     return (
         <>
-            <div>App</div>
+            <h1>Tweet Generator</h1>
+            <Form />
         </>
     )
 }
