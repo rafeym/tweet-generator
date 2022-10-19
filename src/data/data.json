@@ -1,0 +1,102 @@
+{
+    "characters": {
+        "character_1": {
+            "name": "Mike Myers",
+            "images": [
+                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129556/yp8qhzcrksimpap5htce.jpg",
+                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129556/wx3ip1omeiqh7pgidi0m.png"
+            ]
+        },
+        "character_2": {
+            "name": "Jason Vorhees",
+            "images": []
+        },
+        "character_3": {
+            "name": "Chucky",
+            "images": [
+                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129736/caaajvht2h9qqynlenmz.png",
+                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129736/wbqsngthafvozijgnbht.png"
+            ]
+        },
+        "character_4": {
+            "name": "Pennywise",
+            "images": []
+        },
+        "character_5": {
+            "name": "Ghostface",
+            "images": []
+        },
+        "character_6": {
+            "name": "Billy the Puppet",
+            "images": []
+        },
+        "character_7": {
+            "name": "SlenderMan",
+            "images": []
+        },
+        "character_8": {
+            "name": "Annabelle",
+            "images": []
+        },
+        "character_9": {
+            "name": "The Nun",
+            "images": []
+        },
+        "character_10": {
+            "name": "Carrie White",
+            "images": []
+        }
+    },
+
+    "banks": {
+        "bank_1": {
+            "name": "RBC",
+            "twitter-en": "@RBC",
+            "twitter-fr": "@RBCfr"
+        },
+        "bank_2": {
+            "name": "Scotiabank",
+            "twitter-en": "@scotiabank",
+            "twitter-fr": ""
+        },
+        "bank_3": {
+            "name": "TD Bank",
+            "twitter-en": "@TD_Canada",
+            "twitter-fr": "@Banque_TD"
+        },
+        "bank_4": {
+            "name": "BMO",
+            "twitter-en": "@BMO",
+            "twitter-fr": "@BMOfr"
+        },
+        "bank_5": {
+            "name": "CIBC",
+            "twitter-en": "@cibc",
+            "twitter-fr": "@BanqueCIBC"
+        },
+        "bank_6": {
+            "name": "Desjardins",
+            "twitter-en": "",
+            "twitter-fr": "@DesjardinsCoop"
+        }
+    },
+
+    "tweet-body": [
+        {
+            "tweet-en": "There is nothing quite as haunting as <bank>'s financial support to fossil fuels, not even <character>!! 👻😱 Tell #FossilBanks to #KeepItInTheGround >> https://act.gp/3E94b7q @GreenpeaceCA",
+            "tweet-fr": ""
+        },
+        {
+            "tweet-en": "It’s ~ SPOOKY SEASON ~ 👻🎃! But what’s even scarier than <character> is what <bank> is doing to frontline communities and to the planet through their fossil fuel funding. Let’s put an end to their shenanigans >> https://act.gp/3E94b7q @GreenpeaceCA",
+            "tweet-fr": ""
+        },
+        {
+            "tweet-en": "👻😱 BOO! If you thought <character> was scary, wait till you find out how <bank> is wrecking the planet through fossil fuel funding! Tell #FossilBanks to stop their terrifying tactics >> https://act.gp/3E94b7q @GreenpeaceCA",
+            "tweet-fr": ""
+        },
+        {
+            "tweet-en": "This Halloween, <character> is not the scariest thing. It’s <bank>’s staunch commitment to funding fossil fuel projects. 😱 Tell #FossilBanks to stop with the tricks: https://act.gp/3E94b7q 👻 @GreenpeaceCA",
+            "tweet-fr": ""
+        }
+    ]
+}
