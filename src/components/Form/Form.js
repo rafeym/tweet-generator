@@ -26,11 +26,6 @@ const Form = () => {
         setCharacterImageUrl(undefined)
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(tweet)
-    }
-
     const maybeRenderImagePicker = () => {
         if (!selectedCharacterId) return null
 
@@ -101,7 +96,6 @@ const Form = () => {
                         <label>{item['tweet-en']}</label>
                     </div>
                 ))}
-                <input type='submit' onClick={handleSubmit} value='Preview' />
             </div>
 
             <h2>Tweet Preview</h2>
