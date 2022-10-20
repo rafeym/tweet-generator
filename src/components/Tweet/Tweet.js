@@ -25,6 +25,18 @@ const Tweet = ({ tweet }) => {
     const placeholderText =
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas'
 
+    tweet = {
+        bank,
+        character,
+        image,
+        body: updatedTweetBody,
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(tweet)
+    }
+
     return (
         <div className='main-container'>
             <div className='tweet-card'>
@@ -55,6 +67,11 @@ const Tweet = ({ tweet }) => {
                     </div>
                 </div>
             </div>
+            <input
+                type='submit'
+                onClick={handleSubmit}
+                value='Share to Tweet'
+            />
         </div>
     )
 }
