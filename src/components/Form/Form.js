@@ -6,14 +6,16 @@ const Form = () => {
     const { characters, banks } = data
 
     const [selectedCharacterId, setSelectedCharacterId] = useState(undefined)
-    const [characterImageUrl, setCharacterImageUrl] = useState(undefined)
+    const [characterImage, setCharacterImage] = useState(undefined)
+    const [imageUrl, setImageUrl] = useState(undefined)
     const [selectedBank, setSelectedBank] = useState(undefined)
     const [selectedTweetTemplate, setSelectedTweetTemplate] =
         useState(undefined)
 
     const tweet = {
-        bank: banks[selectedBank]?.name,
-        image: characterImageUrl,
+        bank: banks[selectedBank]?.['twitter-en'],
+        imagePrev: characterImage,
+        imageUrl: imageUrl,
         body: selectedTweetTemplate,
         character: characters[selectedCharacterId]?.name,
     }
@@ -23,7 +25,7 @@ const Form = () => {
 
         setSelectedCharacterId(value)
 
-        setCharacterImageUrl(undefined)
+        setCharacterImage(undefined)
     }
 
     const maybeRenderImagePicker = () => {
@@ -39,14 +41,17 @@ const Form = () => {
                                 <input
                                     type='radio'
                                     value={characterImg}
-                                    checked={characterImg === characterImageUrl}
-                                    onChange={() =>
-                                        setCharacterImageUrl(characterImg)
+                                    checked={
+                                        characterImg.preview === characterImage
                                     }
+                                    onChange={() => {
+                                        setCharacterImage(characterImg.preview)
+                                        setImageUrl(characterImg.value)
+                                    }}
                                 />
 
                                 <img
-                                    src={characterImg}
+                                    src={characterImg.preview}
                                     className='preview-image'
                                 />
                             </>

@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '../Button/Button'
+
 import {
     BsArrowLeftRight,
     BsHeart,
@@ -14,28 +16,18 @@ const Tweet = ({ tweet }) => {
     const {
         bank = '<bank>',
         character = '<character>',
-        image,
-        body = '',
+        imagePrev,
+        imageUrl,
+        body = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas',
     } = tweet
 
     const updatedTweetBody = body
         .replace('<character>', character)
         .replace('<bank>', bank)
 
-    const placeholderText =
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat mas'
+    const tweetContent = updatedTweetBody.replaceAll('#', '%40')
 
-    tweet = {
-        bank,
-        character,
-        image,
-        body: updatedTweetBody,
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(tweet)
-    }
+    const tweetURL = `https://twitter.com/intent/tweet?text=${tweetContent}%20${imageUrl}`
 
     return (
         <div className='main-container'>
@@ -48,15 +40,11 @@ const Tweet = ({ tweet }) => {
                         <a href='/'>Greenpeace Canada</a> @GreenpeaceCA{' '}
                         <a href='/'>2022</a>
                     </div>
-                    {body === '' ? (
-                        <p>{placeholderText}</p>
-                    ) : (
-                        <p>{updatedTweetBody}</p>
-                    )}
-                    {image === undefined ? (
+                    {body === '' ? <p>{body}</p> : <p>{updatedTweetBody}</p>}
+                    {imagePrev === undefined ? (
                         <img src={placeholder} alt='placeholder image' />
                     ) : (
-                        <img src={image} alt={`Image of ${character}`} />
+                        <img src={imagePrev} alt={`Image of ${character}`} />
                     )}
                     <div className='tweet-card-right-actions'>
                         <BsChat />
@@ -67,11 +55,7 @@ const Tweet = ({ tweet }) => {
                     </div>
                 </div>
             </div>
-            <input
-                type='submit'
-                onClick={handleSubmit}
-                value='Share to Tweet'
-            />
+            <Button href={tweetURL} />
         </div>
     )
 }
