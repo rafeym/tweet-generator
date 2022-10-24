@@ -3,21 +3,34 @@
         "character_1": {
             "name": "Mike Myers",
             "images": [
-                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129556/yp8qhzcrksimpap5htce.jpg",
-                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129556/wx3ip1omeiqh7pgidi0m.png"
+                {
+                    "preview": "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129556/yp8qhzcrksimpap5htce.jpg",
+                    "value": "pic.twitter.com/VDoo1so2CX"
+                },
+                {
+                    "preview": "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129556/wx3ip1omeiqh7pgidi0m.png",
+                    "value": "pic.twitter.com/gBvmb9ckmm"
+                }
             ]
         },
         "character_2": {
+            "name": "Chucky",
+            "images": [
+                {
+                    "preview": "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129736/caaajvht2h9qqynlenmz.png",
+                    "value": "https://pic.twitter.com/d16CHL33h6"
+                },
+                {
+                    "preview": "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129736/wbqsngthafvozijgnbht.png",
+                    "value": "https://pic.twitter.com/RidB1djakH"
+                }
+            ]
+        },
+        "character_3": {
             "name": "Jason Vorhees",
             "images": []
         },
-        "character_3": {
-            "name": "Chucky",
-            "images": [
-                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129736/caaajvht2h9qqynlenmz.png",
-                "https://res.cloudinary.com/dbgbkbd6w/image/upload/v1666129736/wbqsngthafvozijgnbht.png"
-            ]
-        },
+
         "character_4": {
             "name": "Pennywise",
             "images": []
@@ -76,7 +89,7 @@
         },
         "bank_6": {
             "name": "Desjardins",
-            "twitter-en": "",
+            "twitter-en": "@DesjardinsGroup",
             "twitter-fr": "@DesjardinsCoop"
         }
     },
