@@ -1,0 +1,28 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+
+    select {
+        margin-bottom: 20px;
+    }
+
+    .rb-container {
+        margin-bottom: 10px;
+    }
+
+    .preview-img-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            width: 25%;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
